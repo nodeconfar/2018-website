@@ -10,11 +10,19 @@
     "type": "git",
     "url": "git+https://github.com/nodeconfar/2018-website.git"
   },
-  "keywords": ["conferences", "node.js", "argentina", "buenos aires"],
+  "keywords": [
+    "conferences",
+    "node.js",
+    "argentina",
+    "buenos aires"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/nodeconfar/2018-website/issues"
   },
-  "homepage": "https://github.com/nodeconfar/2018-website#readme"
+  "homepage": "https://github.com/nodeconfar/2018-website#readme",
+  "devDependencies": {
+    "surge": "^0.20.1"
+  }
 }
