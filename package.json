@@ -1,0 +1,20 @@
+{
+  "name": "2018-website",
+  "version": "1.0.0",
+  "description": "2018.nodeconf.com.ar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodeconfar/2018-website.git"
+  },
+  "keywords": ["conferences", "node.js", "argentina", "buenos aires"],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nodeconfar/2018-website/issues"
+  },
+  "homepage": "https://github.com/nodeconfar/2018-website#readme"
+}
