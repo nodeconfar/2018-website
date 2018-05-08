@@ -97,7 +97,7 @@
             <a href="#" class="mw3 pv2">
               <img data-aload="assets/images/logom-header-nodeconf.png" alt="iso-nodeconf">
             </a>
-            <button id="toggle-menu" type="button" class="bg-transparent bn f4 outline-0 pa3"></button>
+            <button id="toggle-menu" type="button" class="bg-transparent bn f4 outline-0 pa3" aria-label="Toggle Menu" aria-pressed="false"></button>
           </div>
           <nav id="menu" class="dn z-0">
             <a class="white link f6 pa2 db tr" href="#">home</a>
@@ -148,7 +148,7 @@
       </div>
     </div>
     <div class="w-60-ns w-100 absolute z-1 top-0">
-      <img data-aload="assets/images/about.jpg">
+      <img data-aload="assets/images/about.jpg" alt="">
     </div>
   </section>
   <section id="cfp" class="bg-navy pv6">
@@ -179,11 +179,14 @@
    <div class="flex items-center justify-center flex-wrap pv4">
      <div class="flex flex-row flex-column-ns"><h3 class="f2 ma0 white ttu tl-ns tc pr2">stay</h3> <h3 class="f2 ma0 white ttu tl-ns tc">up to date</h3></div>
     <form class="mc-form" method="post" action="https://nodeconf.us12.list-manage.com/subscribe/post?u=41bf527ccce1656057feaf22f&amp;id=71ba118ecb" target="_blank" novalidate>
-      <input class="mc-input" type="email" name="EMAIL" value="" placeholder="you@company.com">
+      <label class="visuallyhidden" for="subscribe-email">Subscribe</label>
+      <input class="mc-input" type="email" name="EMAIL" value="" placeholder="you@company.com" id="subscribe-email" required>
       <div class="mc-protection" aria-hidden="true">
       <input type="text" name="b_41bf527ccce1656057feaf22f_71ba118ecb" tabindex="-1" value="">
       </div>
-      <button type="submit" name="subscribe" value="" class="mc-submit"><img data-aload="assets/images/go.png" class="w-30">
+      <button type="submit" name="subscribe" value="" class="mc-submit" aria-label="Send">
+        <img data-aload="assets/images/go.png" class="w-30" alt="">
+      </button>
       </form>
     </div>
   </section>
@@ -196,7 +199,7 @@
         <a href="mailto:sponsors@nodeconf.com.ar" class="btn btn-transparent">be a sponsor</a>
       </div>
       <div class="tc ma0 pt6 nb1">
-        <img data-aload="assets/images/ciudad2.svg" class="v-btm">
+        <img data-aload="assets/images/ciudad2.svg" class="v-btm" alt="">
       </div>
     </div>
 
