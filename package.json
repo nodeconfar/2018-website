@@ -4,7 +4,8 @@
   "description": "2018.nodeconf.com.ar",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "lh": "lighthouse-ci"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
   },
   "homepage": "https://github.com/nodeconfar/2018-website#readme",
   "devDependencies": {
+    "lighthouse-ci": "git+https://github.com/ebidel/lighthouse-ci.git",
     "surge": "^0.20.1"
   }
 }
