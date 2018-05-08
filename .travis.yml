@@ -6,3 +6,6 @@ os:
 after_success:
   - chmod ugo+x ./deploy.sh
   - ./deploy.sh
+branches:
+  only: 
+    - gh-pages
