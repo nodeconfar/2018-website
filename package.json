@@ -1,6 +1,6 @@
 {
   "name": "2018-website",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "2018.nodeconf.com.ar",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,7 @@
     "buenos aires"
   ],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/nodeconfar/2018-website/issues"
   },
