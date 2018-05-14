@@ -87,17 +87,15 @@ header,
 html,
 input[type=email],
 input[type=text],
+li,
 p,
-section {
+section,
+ul {
     box-sizing: border-box
 }
 
 img {
     max-width: 100%
-}
-
-.cover {
-    background-size: cover !important
 }
 
 .outline-0 {
@@ -268,6 +266,10 @@ img {
 
 .link:focus {
     outline: 0
+}
+
+.list {
+    list-style-type: none
 }
 
 .mw2 {
@@ -614,9 +616,17 @@ img {
 }
 
 @media screen and (min-width:45em) {
+    .flex-ns {
+        display: -ms-flexbox;
+        display: flex
+    }
     .flex-column-ns {
         -ms-flex-direction: column;
         flex-direction: column
+    }
+    .flex-row-ns {
+        -ms-flex-direction: row;
+        flex-direction: row
     }
     .flex-wrap-ns {
         -ms-flex-wrap: wrap;
@@ -662,6 +672,10 @@ img {
         padding-left: 0;
         padding-right: 0
     }
+    .mh2-ns {
+        margin-left: .5rem;
+        margin-right: .5rem
+    }
     .tl-ns {
         text-align: left
     }
@@ -689,6 +703,13 @@ input {
     border-radius: 0;
     resize: none;
     font-weight: 400
+}
+
+li,
+ul {
+    padding: 0;
+    list-style: none;
+    margin: 0
 }
 
 input:-ms-input-placeholder {
@@ -961,7 +982,7 @@ h5 {
 
 .profile-img {
     position: relative;
-    height: 280px;
+    height: 264px;
     width: 100%;
     overflow-y: hidden
 }
@@ -1021,6 +1042,12 @@ h5 {
     opacity: .6
 }
 
+.back-form {
+    background-image: url(../assets/images/bg-form.jpg);
+    background-size: cover;
+    padding: 5rem 0
+}
+
 .mc-form {
     width: 400px;
     margin: 20px
@@ -1075,4 +1102,27 @@ h5 {
     position: absolute;
     width: 1px;
     white-space: nowrap
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+.sponsors-logos li {
+    background-color: #0b0332
+}
+
+.sponsors-logos li:hover {
+    background-color: #0c005f
+}
+
+.sponsors-logos .platino li {
+    max-width: 360px
 }
