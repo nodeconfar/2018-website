@@ -247,6 +247,10 @@ img {
     height: 2px
 }
 
+.h3 {
+    height: 4rem
+}
+
 .vh-100 {
     height: 100vh
 }
@@ -334,6 +338,10 @@ img {
 
 .light-green {
     color: #bbdc2f
+}
+
+.navy {
+    color: #0b0340
 }
 
 .dark-blue {
@@ -651,8 +659,8 @@ img {
     .w-two-thirds-ns {
         width: 66.66667%
     }
-    .absolute-ns {
-        position: absolute
+    .fixed-ns {
+        position: fixed
     }
     .pa4-ns {
         padding: 2rem
