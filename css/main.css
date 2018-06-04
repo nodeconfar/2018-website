@@ -1137,3 +1137,9 @@ h5 {
 .sponsors-logos .silver li {
     max-width: 260px
 }
+
+.sponsors-logos .media-partners li,
+.sponsors-logos .media-partners li img {
+    height: 55px;
+    background: transparent;
+}
