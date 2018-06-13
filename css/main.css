@@ -1035,10 +1035,16 @@ h5 {
     background-color: transparent
 }
 
+.btn-white,
 .btn-transparent:hover {
     border-color: #fff;
     color: #0c005f;
-    background-color: #fff
+    background-color: #fff;
+}
+
+.btn-white:hover {
+    border-color: #0c005f;
+    background-color: #adcb2b;
 }
 
 .btn-disable,
