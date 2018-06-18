@@ -1140,8 +1140,16 @@ h5 {
     max-width: 360px
 }
 
+.sponsors-logos .gold li {
+    max-width: 310px;
+}
+
 .sponsors-logos .silver li {
-    max-width: 260px
+    max-width: 260px;
+}
+
+.sponsors-logos .startup li {
+    max-width: 210px;
 }
 
 .sponsors-logos .media-partners li,
