@@ -1049,8 +1049,8 @@ h5 {
 
 .btn-disable,
 .btn-disable:hover {
-    border-color: #fff;
-    color: #fff;
+    border-color: #0c005f;
+    color: #0c005f;
     background-color: transparent;
     opacity: .6
 }
