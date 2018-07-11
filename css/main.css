@@ -328,6 +328,10 @@ img {
     color: #1a2024
 }
 
+.silver {
+    color: #999
+}
+
 .white {
     color: #fff
 }
@@ -418,6 +422,10 @@ img {
     padding-bottom: .5rem
 }
 
+.pb6 {
+    padding-bottom: 5rem
+}
+
 .pt3 {
     padding-top: 1rem
 }
@@ -428,10 +436,6 @@ img {
 
 .pt6 {
     padding-top: 5rem
-}
-
-.pt7 {
-    padding-top: 13rem
 }
 
 .pv1 {
@@ -502,10 +506,6 @@ img {
 
 .mb4 {
     margin-bottom: 2rem
-}
-
-.mt2 {
-    margin-top: .5rem
 }
 
 .mt4 {
@@ -687,9 +687,6 @@ img {
     .tl-ns {
         text-align: left
     }
-    .tr-ns {
-        text-align: right
-    }
     .f0-ns {
         font-size: 3rem
     }
@@ -764,11 +761,11 @@ h5 {
 .headings {
     position: absolute;
     transform-origin: 0 0;
-	-webkit-transform: rotate(90deg) translate3d(0,-100%,0);
+    -webkit-transform: rotate(90deg) translate3d(0, -100%, 0);
     text-transform: uppercase;
     display: block;
-    left: -0.5rem;
-    top: -1rem;
+    left: -.5rem;
+    top: -1rem
 }
 
 @media screen and (max-width:60em) {
@@ -1035,16 +1032,16 @@ h5 {
     background-color: transparent
 }
 
-.btn-white,
-.btn-transparent:hover {
+.btn-transparent:hover,
+.btn-white {
     border-color: #fff;
     color: #0c005f;
-    background-color: #fff;
+    background-color: #fff
 }
 
 .btn-white:hover {
     border-color: #0c005f;
-    background-color: #adcb2b;
+    background-color: #adcb2b
 }
 
 .btn-disable,
@@ -1137,7 +1134,7 @@ h5 {
 }
 
 .sponsors-logos .platino li {
-    max-width: 360px
+    max-width: 360px;
 }
 
 .sponsors-logos .gold li {
@@ -1155,5 +1152,44 @@ h5 {
 .sponsors-logos .media-partners li,
 .sponsors-logos .media-partners li img {
     height: 55px;
+    background: transparent
+}
+
+.picture {
+    height: 370px;
+    overflow: hidden;
+    position: relative
+}
+
+.name {
+    position: absolute;
+    bottom: 0;
+    padding: 7rem 1.5rem 1.5rem;
+    width: 100%
+}
+
+.name h1,
+.name p {
+    position: relative;
+    z-index: 1
+}
+
+.name h1 {
+    line-height: 2.5rem
+}
+
+.name:after {
+    content: "";
+    display: block;
     background: transparent;
+    background: linear-gradient(180deg, transparent 0, rgba(0, 0, 0, .7));
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0
+}
+
+.bg-picture {
+    background-color: #060649
 }

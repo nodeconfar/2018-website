@@ -110,25 +110,44 @@
                 </div>
             </div>
         </header>
-        <div class="diagonal w-100 absolute top-0 z-1"></div>
+        <div class="diagonal w-100 vh-100 absolute top-0 z-1"></div>
         <div class="parallax">
             <div class="bg-trama trama-1"></div>
             <div class="bg-trama trama-2"></div>
         </div>
         <div class="pv7-ns pv6">
-            <div class="mw8 center ph3 relative z-2"> 
+            <div class="mw9 center ph3 relative z-2">
                 <div class="flex flex-wrap bg-white">
-                    <div class="w-third-ns w-100 relative">
+                    <div class="w-third-ns w-100 relative bg-picture">
+                        <div class="picture">
                             <img src="assets/images/speakers/nikolay-on.jpg" class="w-100 v-mid" alt="Nikolay Matvienko">
-                            <a href="https://twitter.com/matvi3nko" target="_black" rel="noopener" class="dim absolute bottom-0 left-0">
+                            <a href="https://twitter.com/matvi3nko" target="_black" rel="noopener" class="dim absolute top-0 left-0">
                                 <img src="assets/images/twitter-triangle.svg" class="v-btm" alt="go to twitter">
                             </a>
+                            <div class="name">
+                                <h1 class="f1 green ma0">Nikolay Matvienko</h1>
+                                <p class="f6 green ma0">Software Engineer @ Grid Dynamics</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="w-two-thirds-ns w-100 pa4">
-                        <h1 class="f1 green ma0">Nikolay Matvienko</h1>
-                        <p class="f5 green ma0">Senior JavaScript developer @ American Eagle Outfitters</p>
-                        <span class="bg-green h0 w3 db mv2"></span>
-                        <p class="f5 dark-blue">He is a big fan of diagnostics and performance optimization of Node.js applications. They do a digital transformation for large US e-commerce companies using Node.js. He has a solid experience of troubleshooting in Node.js.</p>
+                    <div class="w-two-thirds-ns w-100">
+                        <div class="ph4 pv3">
+                            <p class="f7 ttu green"> bio</p>
+                            <p class="f6 dark-blue">He is a big fan of diagnostics and performance optimization of Node.js applications. They do
+                                a digital transformation for large US e-commerce companies using Node.js. He has a solid
+                                experience of troubleshooting in Node.js.</p>
+                        </div>
+                        <div class="ph4 pv3">
+                            <p class="f7 ttu green"> details about the talk</p>
+                            <h4 class="ma0">Decomposition of the Main Thread in Node.js to increase throughput</h4>
+                                <p class="f7">I’ll tell about new best practices of large Node.js apps, which allow to increase throughput
+                                    by 10X times (with demo). </p>
+                                <p class="f7">The growth of functionality in Enterprise applications often leads to a decline in throughput.
+                                    We start with the dispersion of the Main Thread and spread it into a spectrum of operations.
+                                    We learn which of these operations we can offload from the Main Thread to threads/workers/processes,
+                                    and how to do that. We select successful ways of parallelization for each type of operation,
+                                    consider the benefits and limitations. Compare the throughput after the Main Thread decomposition.</p>
+                        </div>
                     </div>
                 </div>
             </div>
