@@ -24,7 +24,5 @@
   },
   "homepage": "https://github.com/nodeconfar/2018-website#readme",
   "devDependencies": {
-    "lighthouse-ci": "git+https://github.com/ebidel/lighthouse-ci.git",
-    "surge": "^0.20.1"
   }
 }
