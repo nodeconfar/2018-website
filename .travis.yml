@@ -5,6 +5,7 @@ os:
   - linux
 after_success:
   - npm install now --no-save
+  - npm install https://github.com/ebidel/lighthouse-ci.git --no-save
   - chmod ugo+x ./now-deploy.sh
   - ./now-deploy.sh
 branches:
