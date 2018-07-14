@@ -4,8 +4,9 @@ node_js:
 os:
   - linux
 after_success:
+  - npm install now --no-save
   - chmod ugo+x ./deploy.sh
-  - ./deploy.sh
+  - ./now-deploy.sh
 branches:
   only: 
     - gh-pages
