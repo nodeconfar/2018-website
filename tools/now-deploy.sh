@@ -13,7 +13,9 @@ write_comment_to_pr "Travis automatic deployment: '${DEPLOY_DOMAIN}'"
 
 # get list of modified files with html extension except cfp.html, speakers.html, conduct.html, index.html
 XARGS_RESULT=$(git diff --name-only gh-pages...$TRAVIS_BRANCH | grep '.html' | grep -v 'cfp.html' | grep -v 'speakers.html' | grep -v 'conduct.html' | grep -v 'index.html' | \
-xargs -L1 -I % sh -c 'printf "%;"; ./imgur.sh $(node tools/screenshot.js %)')
+xargs -L1 -I % sh -c "printf \"%;\"; node tools/screenshot.js ${DEPLOY_DOMAIN}/%")
+
+echo $XARGS_RESULT
 
 echo "$XARGS_RESULT" | while read each
 do
