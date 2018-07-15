@@ -55,7 +55,7 @@ function once(emitter, event) {
     await page.close();
     await browser.close();
   } catch(err) {
-    console.log('There was an error:', err);
+    process.stderr.write(`There was an error taking the screenshot: ${err.message}`);
     process.exit(1);
   }
 })();
