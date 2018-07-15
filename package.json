@@ -23,6 +23,7 @@
     "url": "https://github.com/nodeconfar/2018-website/issues"
   },
   "homepage": "https://github.com/nodeconfar/2018-website#readme",
-  "devDependencies": {
+  "devDependencies": {},
+  "dependencies": {
   }
 }

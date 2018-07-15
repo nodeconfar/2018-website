@@ -4,9 +4,9 @@ node_js:
 os:
   - linux
 after_success:
-  - npm install now https://github.com/ebidel/lighthouse-ci.git --no-save
-  - chmod ugo+x ./now-deploy.sh
-  - ./now-deploy.sh
+  - npm install now https://github.com/ebidel/lighthouse-ci.git puppeteer --no-save
+  - chmod ugo+x ./tools/now-deploy.sh ./tools/imgur.sh
+  - ./tools/now-deploy.sh
 branches:
   only: 
     - gh-pages
