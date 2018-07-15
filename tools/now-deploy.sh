@@ -13,9 +13,9 @@ write_comment_to_pr "Travis automatic deployment: '${DEPLOY_DOMAIN}'"
 
 git diff --name-only gh-pages
 
-curl 'https://cards-dev.twitter.com/validator' -H "cookie: $TWITTER_COOKIE" > output.html
-
-cat output.html
+echo 'testing twitter cookies'
+curl 'https://cards-dev.twitter.com/validator' -H "cookie: $TWITTER_COOKIE" -I
+curl 'https://cards-dev.twitter.com/validator' -H "cookie: $TWITTER2" -I
 
 # get list of modified files with html extension except cfp.html, speakers.html, conduct.html, index.html
 XARGS_RESULT=$(git diff --name-only gh-pages | grep '.html' | grep -v 'cfp.html' | grep -v 'speakers.html' | grep -v 'conduct.html' | grep -v 'index.html' | \
