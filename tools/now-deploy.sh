@@ -11,9 +11,9 @@ write_comment_to_pr () {
 
 write_comment_to_pr "Travis automatic deployment: '${DEPLOY_DOMAIN}'"
 
-echo $TRAVIS_BRANCH
+echo $TRAVIS_PULL_REQUEST_BRANCH
 
-git diff --name-only gh-pages...$TRAVIS_BRANCH
+git diff --name-only gh-pages...$TRAVIS_PULL_REQUEST_BRANCH
 
 # get list of modified files with html extension except cfp.html, speakers.html, conduct.html, index.html
 XARGS_RESULT=$(git diff --name-only gh-pages...$TRAVIS_BRANCH | grep '.html' | grep -v 'cfp.html' | grep -v 'speakers.html' | grep -v 'conduct.html' | grep -v 'index.html' | \
