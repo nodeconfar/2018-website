@@ -19,4 +19,4 @@ do
   IFS=';' read -r -a line <<< "$each"
   PR_COMMENT+="File modified ${line[0]}: \n ![]($(./tools/imgur.sh ${line[1]}))\n"
 done
-write_comment_to_pr $PR_COMMENT )
+write_comment_to_pr "$PR_COMMENT" )
