@@ -1,5 +1,10 @@
 #!/bin/bash
+
+# awful hack because social cards doesn't allow relative paths
+sed -i "s/https:\/\/2018.nodeconf.com.ar/https:\/\/2018-nodeconfar.now.sh/g" *.html
+
 DEPLOY_DOMAIN=$(now --token $NOW_TOKEN --public --static)
+now alias "${DEPLOY_DOMAIN}" 2018-nodeconfar
 npm run lh $DEPLOY_DOMAIN
 
 GITHUB_PR_COMMENTS=https://api.github.com/repos/${TRAVIS_REPO_SLUG}/issues/${TRAVIS_PULL_REQUEST}/comments
@@ -9,8 +14,6 @@ write_comment_to_pr () {
 }
 
 PR_COMMENT="Travis automatic deployment: ${DEPLOY_DOMAIN}\n"
-
-git diff --name-only gh-pages
 
 # get list of modified files with html extension except cfp.html, speakers.html, conduct.html, index.html
 XARGS_RESULT=$(git diff --name-only gh-pages | grep '.html' | grep -v 'cfp.html' | grep -v 'speakers.html' | grep -v 'conduct.html' | grep -v 'index.html' | \
