@@ -56,6 +56,7 @@ function once(emitter, event) {
     await browser.close();
   } catch(err) {
     process.stderr.write(`There was an error taking the screenshot: ${err.message}`);
+    process.stderr.write(err.stack);
     process.exit(1);
   }
 })();
