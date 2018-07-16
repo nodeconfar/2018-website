@@ -5,7 +5,7 @@ GIT_DIFF=$(git diff --name-only gh-pages)
 # awful hack because social cards doesn't allow relative paths
 sed -i "s/https:\/\/2018.nodeconf.com.ar/https:\/\/2018-nodeconfar.now.sh/g" *.html
 
-DEPLOY_DOMAIN=$(now --token $NOW_TOKEN --public --static)
+DEPLOY_DOMAIN=$(now --token $NOW_TOKEN --public --static --team nodeconfar)
 now alias "${DEPLOY_DOMAIN}" 2018-nodeconfar --token $NOW_TOKEN --team nodeconfar
 npm run lh $DEPLOY_DOMAIN
 
