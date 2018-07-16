@@ -24,6 +24,10 @@ xargs -L1 -I % sh -c "printf \"%;\"; node tools/screenshot.js https://2018-nodec
 echo "$XARGS_RESULT" | ( while read each
 do
   IFS=';' read -r -a line <<< "$each"
-  PR_COMMENT+="File modified ${line[0]}: \n ![]($(./tools/imgur.sh ${line[1]}))\n"
+  if [[ -z "${line// }" ]]; then
+    echo "Output is empty."
+  else
+    PR_COMMENT+="File modified ${line[0]}: \n ![]($(./tools/imgur.sh ${line[1]}))\n"
+  fi
 done
 write_comment_to_pr "$PR_COMMENT" )
