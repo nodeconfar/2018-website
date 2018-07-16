@@ -10,6 +10,8 @@ write_comment_to_pr () {
 
 PR_COMMENT="Travis automatic deployment: ${DEPLOY_DOMAIN}\n"
 
+git diff --name-only gh-pages
+
 # get list of modified files with html extension except cfp.html, speakers.html, conduct.html, index.html
 XARGS_RESULT=$(git diff --name-only gh-pages | grep '.html' | grep -v 'cfp.html' | grep -v 'speakers.html' | grep -v 'conduct.html' | grep -v 'index.html' | \
 xargs -L1 -I % sh -c "printf \"%;\"; node tools/screenshot.js $DEPLOY_DOMAIN/%")
