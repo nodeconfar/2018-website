@@ -46,7 +46,7 @@ function once(emitter, event) {
 
     const frame = await once(page, 'framenavigated');
     await frame.waitForSelector('body > div > div > a > div.SummaryCard-image > div > div > img');
-    await timeout(800);
+    await timeout(1200);
 
     const fileName = `${Date.now()}.png`;
     await page.screenshot({path: fileName});
