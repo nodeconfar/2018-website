@@ -44,9 +44,9 @@ function once(emitter, event) {
     await page.click(clickSelector);
     await page.waitForSelector('#CardPreview > div.CardPreview-preview.js-cardPreview iframe');
 
-    // const frame = await once(page, 'framenavigated');
+    const frame = await once(page, 'framenavigated');
     // await frame.waitForSelector('body > div > div > a > div.SummaryCard-image > div > div > img');
-    await timeout(1600);
+    await timeout(2000);
 
     const fileName = `${Date.now()}.png`;
     await page.screenshot({path: fileName});
