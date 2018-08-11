@@ -126,7 +126,7 @@
                             </a>
                             <div class="name">
                                 <h1 class="f1 green ma0">Nikolay Matvienko</h1>
-                                <p class="f6 green ma0">Software Engineer @ Grid Dynamics</p>
+                                <p class="f6 green ma0">Software Engineer</br>@ Grid Dynamics</p>
                             </div>
                         </div>
                     </div>
@@ -138,15 +138,30 @@
                                 experience of troubleshooting in Node.js.</p>
                         </div>
                         <div class="ph4 pv3">
-                            <p class="f7 ttu green"> details about the talk</p>
-                            <h4 class="ma0">Decomposition of the Main Thread in Node.js to increase throughput</h4>
-                            <p class="f7">I’ll tell about new best practices of large Node.js apps, which allow to increase throughput
-                                by 10X times.</p>
-                            <p class="f7">The growth of functionality in Enterprise applications often leads to a decline in throughput.
-                                We start with the dispersion of the Main Thread and spread it into a spectrum of operations.
-                                We learn which of these operations we can offload from the Main Thread to threads/workers/processes,
-                                and how to do that. We select successful ways of parallelization for each type of operation,
-                                consider the benefits and limitations. Compare the throughput after the Main Thread decomposition.</p>
+                            <div class="tab f7 pb3">
+                                <button class="tablinks active" onclick="openWork(event, 'talk')" id="tabOpen">talk</button>
+                                <button class="tablinks" onclick="openWork(event, 'workshop')">Workshop</button>
+                            </div>
+                            <div id="talk" class="tabcontent active">
+                                <h4 class="ma0">Decomposition of the Main Thread in Node.js to increase throughput</h4>
+                                <p class="f7">I’ll tell about new best practices of large Node.js apps, which allow to increase throughput
+                                    by 10X times (with demo). </p>
+                                <p class="f7">The growth of functionality in Enterprise applications often leads to a decline in throughput.
+                                    We start with the dispersion of the Main Thread and spread it into a spectrum of operations.
+                                    We learn which of these operations we can offload from the Main Thread to threads/workers/processes,
+                                    and how to do that. We select successful ways of parallelization for each type of operation,
+                                    consider the benefits and limitations. Compare the throughput after the Main Thread decomposition.</p>
+                            </div>
+                            <div id="workshop" class="tabcontent">
+                                <h4 class="ma0">Troubleshooting Node.js applications in production</h4>
+                                <p class="f7">Based on my experience in diagnosing and troubleshooting highload e-commerce Node.js app in production,  we will analyze  six real cases that occurred on Black Friday eve and learn  how to:</p>
+                                <p class="f7">– debug and trace Node.js apps on different levels,  
+                                    – create a correct error handler strategy for creation and debugging core dumps using llnode and gencore, node-report
+                                    – track performance problems and memory leaks
+                                    – analyze memory consumption using  GC tracing and diagrams
+                                    – analize different Flame Graphs and how to find the root of bottleneck.
+                                    – cases of performance optimization in Node.js </p>
+                            </div>
                         </div>
                     </div>
                 </div>
