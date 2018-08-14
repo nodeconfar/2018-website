@@ -137,9 +137,14 @@
                                 DevRel team promoting modern web technologies. He loves JS internals & playing (quite literally!)
                                 with microcontrollers.</p>
                         </div>
+
                         <div class="ph4 pv3">
-                            <p class="f7 ttu green"> details about the talk</p>
-                            <h4 class="ma0">Approaching the JavaScript Singularity</h4>
+                            <div class="tab f7 pb3">
+                                <button class="tablinks active" onclick="openWork(event, 'talk')" id="tabOpen">talk</button>
+                                <button class="tablinks" onclick="openWork(event, 'workshop')">Workshop</button>
+                            </div>
+                            <div id="talk" class="tabcontent active">
+                                <h4 class="ma0">Approaching the JavaScript Singularity</h4>
                                 <p class="f7">Developers are quick to complain about "JavaScript Fatigue", the perceived high volatility
                                     of libraries, tooling and the JavaScript language itself — yet very few look at these
                                     changes and additions as a whole. In this talk I will take some of JavaScript's new features
@@ -147,6 +152,17 @@
                                     convergence), and I try to showcase what they mean for web development and how, when
                                     used together, they are able to address various hurdles and complaints that have been
                                     plaguing Node.js & web development for a long time.</p>
+                            </div>
+                            <div id="workshop" class="tabcontent">
+                                <h4 class="ma0">Clouduboy - create JS games for microcontrollers</h4>
+                                <p class="f7">Explore, tinker, play - learn how to create your very own retro pixelart games for tiny Arduino-based
+                                    pocket-sized game consoles reminiscent of Gameboy's glory days. Best thing? Thanks to
+                                    Clouduboy — my open-source project, also used by enthusiasts and coding bootcamps — you
+                                    can now do this entirely in your browser, all in JavaScript with the same language and
+                                    techniques you already know (and love)! At the workshop you could use some of the off-the-shelf
+                                    tiny pocket game consoles provided or build your own to learn a bit about JavaScript
+                                    on microcontrollers (a.k.a — buzzword warning! — IoT).</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -172,6 +188,25 @@
         </div>
     </footer>
     <script defer="defer" src="js/main-e5e2151269.js"></script>
+    <script>
+        function openWork(evt, workName) {
+            var i, tabcontent, tablinks;
+
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            document.getElementById(workName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        document.getElementById("tabOpen").click();
+    </script>
 </body>
 
 </html>

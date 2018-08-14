@@ -243,10 +243,6 @@ img {
     font-weight: 700
 }
 
-.h0 {
-    height: 2px
-}
-
 .h3 {
     height: 4rem
 }
@@ -290,10 +286,6 @@ img {
 
 .mw9 {
     max-width: 76rem
-}
-
-.w3 {
-    width: 4rem
 }
 
 .w-30 {
@@ -353,7 +345,11 @@ img {
 }
 
 .blue {
-    color: #4a90e2
+    color: #54a2ff
+}
+
+.light-blue {
+    color: #67acff
 }
 
 .bg-navy-70 {
@@ -391,7 +387,7 @@ img {
 
 .hover-blue:focus,
 .hover-blue:hover {
-    color: #4a90e2
+    color: #54a2ff
 }
 
 .pa2 {
@@ -420,6 +416,10 @@ img {
 
 .pb2 {
     padding-bottom: .5rem
+}
+
+.pb3 {
+    padding-bottom: 1rem
 }
 
 .pb6 {
@@ -506,6 +506,10 @@ img {
 
 .mb4 {
     margin-bottom: 2rem
+}
+
+.mt2 {
+    margin-top: .5rem
 }
 
 .mt4 {
@@ -1009,8 +1013,26 @@ h5 {
     z-index: 1
 }
 
+.profile .type {
+    transition: all .3s ease-in;
+    text-transform: uppercase;
+    font-size: .875rem;
+    padding: .5rem .75rem 0 0;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    background-color: #0b0340;
+    z-index: 3;
+    margin: 0
+}
+
+.profile .type,
 .profile:hover .on {
     opacity: 0
+}
+
+.profile:hover .type {
+    opacity: 1
 }
 
 .btn {
@@ -1134,19 +1156,19 @@ h5 {
 }
 
 .sponsors-logos .platino li {
-    max-width: 360px;
+    max-width: 360px
 }
 
 .sponsors-logos .gold li {
-    max-width: 310px;
+    max-width: 310px
 }
 
 .sponsors-logos .silver li {
-    max-width: 260px;
+    max-width: 260px
 }
 
 .sponsors-logos .startup li {
-    max-width: 210px;
+    max-width: 210px
 }
 
 .sponsors-logos .media-partners li,
@@ -1192,4 +1214,29 @@ h5 {
 
 .bg-picture {
     background-color: #060649
+}
+
+.tab {
+    overflow: hidden
+}
+
+.tab button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .3s;
+    text-transform: uppercase;
+    color: #adcb2b
+}
+
+.tab button.active,
+.tab button:hover {
+    border-bottom: 1px solid #060649;
+    color: #060649
+}
+
+.tabcontent {
+    display: none;
+    animation: a 1s
 }
