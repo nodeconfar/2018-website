@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <!--  Design by iamCGD-->
+    <title>NodeConf Argentina 2018</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="assets/favicon.ico">
+    <meta name="theme-color" content="#0b0340">
+    <meta name="msapplication-navbutton-color" content="#0b0340">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0b0340">
+    <meta name="keywords" content="nodeconf,argentina,konex,buenos aires,javascript,nodejs,node,js">
+    <meta name="description" content="They are friends and Kelsus's Principals in South America. Moved to Node.js after a long history as iOS developers.">
+    <link rel="canonical" href="https://2018.nodeconf.com.ar/">
+    <meta name="twitter:title" itemprop="name" property="og:title" content="NodeConf Argentina - Jonathan Díaz and Raúl Hermann">
+    <meta name="twitter:description" content="They are friends and Kelsus's Principals in South America. Moved to Node.js after a long history as iOS developers.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@nodeconfar">
+    <meta name="twitter:creator" content="@nodeconfar">
+    <meta name="author" itemprop="creator" content="NodeConf Argentina <hello@nodeconf.com.ar>">
+    <meta property="og:site_name" content="NodeConf Argentina">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="They are friends and Kelsus's Principals in South America. Moved to Node.js after a long history as iOS developers.">
+    <meta property="og:url" content="https://2018.nodeconf.com.ar/jonathan-diaz-raul-hermann.html">
+    <meta property="og:image" content="https://2018.nodeconf.com.ar/assets/images/speakers/kelsus-meta.png">
+
+    <!-- Add to home screen for Safari on iOS-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0b0340">
+    <meta name="apple-mobile-web-app-title" content="NodeConfAr18">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-icon-180x180.png">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+
+    <!-- twitter only cares about the last meta image repeat the cover -->
+    <meta name="twitter:image:src" content="https://2018.nodeconf.com.ar/assets/images/speakers/kelsus-meta.png">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Cousine:400,700" rel="stylesheet">
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-99917583-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
+
+<body class="bg-dark-blue">
+    <div id="introLoader" class="introloader">
+        <div class="spinner">
+            <div class="spinner-inner"></div>
+        </div>
+    </div>
+    <div class="hero">
+        <header class="header" role="banner">
+            <div class="mw9 center ph3">
+                <div id="desktop-nav" class="dn-ms">
+                    <div class="flex justify-between items-center pv3">
+                        <div>
+                            <p class="ma0">
+                                <a href="mailto:hello@nodeconf.com.ar" class="f6 white hover-blue link">hello@nodeconf.com.ar</a>
+                            </p>
+                            <p class="ma0">
+                                <a href="https://www.twitter.com/nodeconfar" target="_blank" rel="noopener" class="f6 white hover-blue link">@nodeconfar</a>
+                            </p>
+                        </div>
+                        <nav id="top-menu">
+                            <a class="white hover-blue link f6 ph2" href="/">home</a>
+                            <a class="white hover-blue link f6 ph2" href="/#about">about</a>
+                            <a class="white hover-blue link f6 ph2" href="speakers.html">speakers</a>
+                            <a class="white hover-blue link f6 ph2" href="/#tickets">tickets</a>
+                            <a class="white hover-blue link f6 ph2" href="/#sponsors">sponsors</a>
+                        </nav>
+                    </div>
+                </div>
+                <div id="mobile-nav" class="dn-l">
+                    <div class="flex items-center justify-between mw8 center">
+                        <a href="/" class="mw3 pv2">
+                            <img src="assets/images/logom-header-nodeconf.png" alt="iso-nodeconf">
+                        </a>
+                        <button id="toggle-menu" type="button" class="bg-transparent bn f4 outline-0 pa3"></button>
+                    </div>
+                    <nav id="menu" class="dn z-0">
+                        <a class="white link f6 pa2 db tr" href="/">home</a>
+                        <a class="white link f6 pa2 db tr" href="/#about">about</a>
+                        <a class="white link f6 pa2 db tr" href="speakers.html">speakers</a>
+                        <a class="white link f6 pa2 db tr" href="/#tickets">tickets</a>
+                        <a class="white link f6 pa2 db tr" href="/#sponsors">sponsors</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="diagonal w-100 absolute top-0 z-1"></div>
+        <div class="parallax">
+            <div class="bg-trama trama-1"></div>
+            <div class="bg-trama trama-2"></div>
+        </div>
+        <div class="pv7-ns pv6">
+            <div class="mw9 center ph3 relative z-2">
+                    <div class="flex flex-wrap bg-white">
+                        <div class="w-third-ns w-100 relative bg-picture">
+                            <div class="picture">
+                                <img src="assets/images/speakers/kelsus-on.gif" class="w-100 v-mid" alt="Kelsus">
+                                <a href="https://twitter.com/jonathanpdiaz" target="_black" rel="noopener" class="dim absolute top-0 left-0">
+                                    <img src="assets/images/twitter-triangle-blue.svg" class="v-btm" alt="go to twitter">
+                                </a>
+                                <div class="name">
+                                    <h1 class="f1 light-blue ma0"><a href="https://twitter.com/jonathanpdiaz" class="link light-blue dim" target="_black" rel="noopener">Jonathan Díaz</a> & <a href="https://github.com/raulherrmann" class="link light-blue dim" target="_black" rel="noopener">Raúl Hermann</a></h1>
+                                    <p class="f6 light-blue ma0">Principal Software Engineer @ Kelsus</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-two-thirds-ns w-100">
+                            <div class="ph4 pv3">
+                                <p class="f7 ttu blue">bio</p>
+                                <p class="f6 dark-blue"><a href="https://twitter.com/jonathanpdiaz" class="link blue" target="_black" rel="noopener">Jonathan</a> and <a href="https://github.com/raulherrmann" class="link blue" target="_black" rel="noopener">Raul</a> are friends and Kelsus's Principals in South America. Moved to Node.js after a long history as iOS developers. Recently worked to standardize Kelsus projects with a consistent CI/CD pipeline with Node.js, AWS, and Docker.</p>
+                            </div>
+                            <div class="ph4 pv3">
+                                <p class="f7 ttu blue">details about the workshop</p>
+                                <h4 class="ma0">Running microservices securely with Docker on AWS’s ECS</h4>
+                                    <p class="f7">Basic knowledge on Docker is assumed. We will show a refreshing approach to managing your Dockerized production software with AWS’s ECS. ECS is more approachable than the well known Kubernetes, and sufficiently powerful for most production deployments. We will demonstrate from beginning to end deploying a microservice with ECS including everything from pushing docker images to AWS’s Elastic Container Registry through to managing secrets in AWS’s secrets manager and finally running and autoscaling inside ECS with a connection to an RDS postgres database.</p>
+                                   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <footer class="pv2 h3 bg-dark-blue bt b--green fixed-ns relative right-0 left-0 bottom-0 z-3">
+        <div class="mw9 center ph3 relative">
+            <div class="flex flex-wrap justify-between-ns justify-center items-center tl-ns tc">
+                <p class="blue f7">
+                    <a href="conduct.html" class="link green hover-blue">code of conduct</a> |
+                    <a href="https://twitter.com/nodeconfar" class="link green hover-blue" target="_black" rel="noopener">twitter</a> |
+                    <a href="https://www.facebook.com/nodeconfar/" class="link green hover-blue" target="_black" rel="noopener">facebook</a> |
+                    <a href="https://www.youtube.com/c/nodeconfargentina" class="link green hover-blue" target="_black" rel="noopener">youtube</a>
+                </p>
+                <div>
+                    <p class="blue f7">design & code by
+                        <a href="https://iamcgd.com" target="_blank" rel="noopener" class="link blue hover-white">iamcgd</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script defer="defer" src="js/main-e5e2151269.js"></script>
+</body>
+
+</html>
