@@ -1159,7 +1159,7 @@ h5 {
 }
 
 .sponsors-logos li {
-    background-color: #0b0332
+    background-color: #0b0332;
 }
 
 .sponsors-logos li:hover {
@@ -1167,19 +1167,23 @@ h5 {
 }
 
 .sponsors-logos .platino li {
-    max-width: 360px
+    max-width: 360px;
+    height: 136px;
 }
 
 .sponsors-logos .gold li {
-    max-width: 310px
+    max-width: 310px;
+    height: 117px;
 }
 
 .sponsors-logos .silver li {
-    max-width: 260px
+    max-width: 260px;
+    height: 98px;
 }
 
 .sponsors-logos .startup li {
-    max-width: 210px
+    max-width: 210px;
+    height: 79px;
 }
 
 .sponsors-logos .media-partners li,
