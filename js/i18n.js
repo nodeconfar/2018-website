@@ -1,39 +1,3 @@
-/*
-## Rational
-  I don't wanted to bloat the website with a i18n library so I came up with this simple solution.
-
-## Translations
-  Since the translations wasn't part of the challenge I just translated only `index.html` until the Tickets section using Google Translate.
-  Only for demo and documentation purposes.
-
-## How to use
-  1. Add a new key to the translations object inside the "en" or "es" key and its translation.
-  ```javascript
-  // I.e: Let's add the "date" key
-
-  const translations = {
-    en: {
-      date: 'OCTOBER 18th-20th, 2018',
-    },
-    es: {
-      date: 'OCTUBRE 18-20, 2018',
-    },
-  }
-  ```
-
-  2. Add an attribute "data-i18n" to the element that needs that translation with the value of the key created.
-  ```html
-  <!-- I.e: Let's add the attribute "data-i18n" and the value of the key just created "date" to the element needing that translation -->
-    <p class="f3 green ba b--green pv2 ph4 center" data-i18n="date">OCTOBER 18th-20th, 2018</p>
-  ```
-
-## Reminder
-- There are two `console.error()` defined in case a key is not defined or a element needs a "data-i18n" attribute
-- Be careful to what element you are adding the "data-i18n" attribute since this code uses `textContent` could remove inner childrens of that element.
-  So to avoid this scenario wrap your text in a `span` element with the `data-i18n` attribute on it.
-
-*/
-
 const translations = {
   en: {
     heroSection: {
