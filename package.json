@@ -4,6 +4,7 @@
   "description": "2018.nodeconf.com.ar",
   "main": "index.js",
   "scripts": {
+    "start": "serve",
     "test": "exit 0",
     "lh": "lighthouse-ci"
   },
@@ -25,5 +26,6 @@
   "homepage": "https://github.com/nodeconfar/2018-website#readme",
   "devDependencies": {},
   "dependencies": {
+    "serve": "^10.0.2"
   }
 }
