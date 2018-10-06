@@ -1297,6 +1297,44 @@ h5 {
 .bg-picture {
     background-color: #060649
 }
+.h-370 {
+    height: 370px;
+    overflow: hidden;
+}
+.read-more-trigger,
+.read-more-state {
+    font-size: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-bottom: 1px solid #060649;
+    color: #060649;
+}
+.read-more-state {
+    display: none;
+}
+.read-more-wrap {
+    margin: 0 0 5px 0;
+}
+.read-more-target {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: .25s ease;
+}
+
+.read-more-state:checked~.read-more-wrap .read-more-target {
+    opacity: 1;
+    font-size: inherit;
+    max-height: 999em;
+}
+
+.read-more-state~.read-more-trigger:before {
+    content: 'Show more';
+}
+
+.read-more-state:checked~.read-more-trigger:before {
+    content: 'Show less';
+}
 
 .tab {
     overflow: hidden;
@@ -1480,5 +1518,9 @@ a.event-card:hover {
 
     .tab {
         font-size: 1.2rem
+    }
+    .h-370 {
+        height: 100%;
+        overflow: visible;
     }
 }
