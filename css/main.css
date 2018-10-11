@@ -122,8 +122,8 @@ img {
     border-width: 0
 }
 
-.b--near-black {
-    border-color: #1a2024
+.b--navy {
+    border-color: #0b0340
 }
 
 .b--green {
@@ -237,6 +237,11 @@ img {
     justify-content: center
 }
 
+.justify-around { 
+    -ms-flex-pack: distribute; 
+    justify-content: space-around; 
+}
+
 .justify-between {
     -ms-flex-pack: justify;
     justify-content: space-between
@@ -338,7 +343,7 @@ img {
 }
 
 .near-black {
-    color: #1a2024
+    color: #0b0340
 }
 
 .silver {
@@ -351,10 +356,6 @@ img {
 
 .green {
     color: #adcb2b
-}
-
-.light-green {
-    color: #bbdc2f
 }
 
 .navy {
@@ -377,10 +378,6 @@ img {
     background-color: rgba(11, 3, 64, .7)
 }
 
-.bg-near-black {
-    background-color: #1a2024
-}
-
 .bg-white {
     background-color: #fff
 }
@@ -399,6 +396,9 @@ img {
 
 .bg-dark-blue {
     background-color: #0c005f
+}
+.bg-blue {
+    background-color: #54a2ff
 }
 
 .hover-white:focus,
@@ -698,6 +698,11 @@ img {
     .justify-between-ns {
         -ms-flex-pack: justify;
         justify-content: space-between
+    }
+
+    .justify-center-ns {
+        -ms-flex-pack: center;
+        justify-content: center
     }
 
     .fr-ns {
@@ -1036,7 +1041,7 @@ h5 {
 .go-map .tooltip {
     background: #4a90e2;
     bottom: 50px;
-    color: #1a2024;
+    color: #0b0340;
     right: 50%;
     margin-right: -35px;
     opacity: 0;
@@ -1352,9 +1357,16 @@ h5 {
     color: #adcb2b
 }
 
+.tab.sch {
+    padding-bottom: 1rem;
+    font-size: 1rem;
+}
+
 .tab.sch button {
     font-family: Archivo Black, sans-serif;
-    color: #adcb2b
+    border-bottom: 1px solid transparent;
+    color: #adcb2b;
+    padding: 10px;
 }
 
 .tab button.active,
@@ -1366,7 +1378,7 @@ h5 {
 .tab.sch button.active,
 .tab.sch button:hover {
     border-bottom: 1px solid #fff;
-    color: #fff
+    color: #fff;
 }
 
 .tabcontent {
@@ -1391,8 +1403,9 @@ h5 {
     transition: all .15s ease
 }
 
-a.event-card:hover .title h4 {
-    color: #54a2ff
+a.event-card:hover .title h4,
+a.event-card:hover .time {
+    color: #adcb2b
 }
 
 a.event-card:hover {
@@ -1494,17 +1507,15 @@ a.event-card:hover {
         margin: 0 auto
     }
 
+    .h-370 {
+        height: 100%;
+        overflow: visible;
+    }
+
     .event:before,
     .profile-s,
     .time:after {
         display: none
-    }
-
-    .date-place {
-        position: relative;
-        top: 0;
-        border-top: 1px solid;
-        padding: 20px 0
     }
 
     .date-place,
@@ -1517,10 +1528,26 @@ a.event-card:hover {
     }
 
     .tab {
-        font-size: 1.2rem
+        font-size: 1.2rem;
     }
-    .h-370 {
-        height: 100%;
-        overflow: visible;
+
+    .tab.sch {
+        padding: 0;
+        background-color: #0c005f;
+    }
+    .tab.sch button {
+        width: 33.33333%;
+        padding: 1rem;
+        border-bottom: none;
+        border-right: solid 3px #0b0340;
+    }
+    .tab.sch button:last-child {
+        border-right: none;
+    }
+    .tab.sch button.active, 
+    .tab.sch button:hover {
+        border-bottom: none;
+        background-color: #adcb2b;
+        color: #060649;
     }
 }
