@@ -85,13 +85,13 @@
               </p>
             </div>
             <nav id="top-menu">
-              <a class="white hover-blue link f6 ph2" href="#">home</a>
-              <a class="white hover-blue link f6 ph2" href="#about">about</a>
-              <a class="white hover-blue link f6 ph2" href="speakers.html">speakers</a>
-              <a class="white hover-blue link f6 ph2" href="schedule.html">schedule</a>
-              <a class="white hover-blue link f6 ph2" href="#sponsors">sponsors</a>
-              <a class="white hover-blue link f6 ph2" data-lang="en">en</a>
-              <a class="white hover-blue link f6 ph2" data-lang="es">es</a>
+              <a data-i18n="menuSection.home" class="white hover-blue link f6 ph2" href="#">home</a>
+              <a data-i18n="menuSection.about" class="white hover-blue link f6 ph2" href="#about">about</a>
+              <a data-i18n="menuSection.speakers" class="white hover-blue link f6 ph2" href="speakers.html">speakers</a>
+              <a data-i18n="menuSection.schedule" class="white hover-blue link f6 ph2" href="schedule.html">schedule</a>
+              <a data-i18n="menuSection.sponsors" class="white hover-blue link f6 ph2" href="#sponsors">sponsors</a>
+              <a class="white hover-blue link f6 pl4 ttu" data-lang="en">en</a>
+              <a class="white hover-blue link f6 ph2 ttu" data-lang="es">es</a>
             </nav>
           </div>
         </div>
@@ -103,11 +103,13 @@
             <button id="toggle-menu" type="button" class="bg-transparent bn f4 outline-0 pa3" aria-label="Toggle Menu" aria-pressed="false"></button>
           </div>
           <nav id="menu" class="dn z-0">
-            <a class="white link f6 pa2 db tr" href="#">home</a>
-            <a class="white link f6 pa2 db tr" href="#about">about</a>
-            <a class="white link f6 pa2 db tr" href="speakers.html">speakers</a>
-            <a class="white link f6 pa2 db tr" href="schedule.html">schedule</a>
-            <a class="white link f6 pa2 db tr" href="#sponsors">sponsors</a>
+            <a data-i18n="menuSection.home" class="white link f6 pa2 db tr" href="#">home</a>
+            <a data-i18n="menuSection.about" class="white link f6 pa2 db tr" href="#about">about</a>
+            <a data-i18n="menuSection.speakers" class="white link f6 pa2 db tr" href="speakers.html">speakers</a>
+            <a data-i18n="menuSection.schedule" class="white link f6 pa2 db tr" href="schedule.html">schedule</a>
+            <a data-i18n="menuSection.sponsors" class="white link f6 pa2 db tr" href="#sponsors">sponsors</a>
+            <a class="white link f6 pa2 db tr ttu" data-lang="en">en</a>
+            <a class="white link f6 pa2 db tr ttu" data-lang="es">es</a>
           </nav>
         </div>
       </div>
@@ -220,8 +222,8 @@
         </a>
       </div>
       <div class="flex justify-center items-center pt3">
-        <a href="speakers.html" class="btn btn-transparent">view all speakers</a> 
-        <a href="schedule.html" class="btn btn-transparent">view schedule</a>
+        <a data-i18n="menuSection.viewspeak" href="speakers.html" class="btn btn-transparent">view all speakers</a> 
+        <a data-i18n="menuSection.viewschedule" href="schedule.html" class="btn btn-transparent">view schedule</a>
        </div>
  
 
@@ -263,8 +265,8 @@
   <section class="back-form">
     <div class="flex items-center justify-center flex-wrap pv4">
       <div class="flex flex-row flex-column-ns">
-        <h3 class="f2 ma0 white ttu tl-ns tc pr2">stay</h3>
-        <h3 class="f2 ma0 white ttu tl-ns tc">up to date</h3>
+        <h3 class="f2 ma0 white ttu tl-ns tc pr2"  data-i18n="formSection.title">stay</h3>
+        <h3 class="f2 ma0 white ttu tl-ns tc" data-i18n="formSection.subtitle">up to date</h3>
       </div>
       <form class="mc-form" method="post" action="https://nodeconf.us12.list-manage.com/subscribe/post?u=41bf527ccce1656057feaf22f&amp;id=71ba118ecb"
         target="_blank" novalidate>
@@ -283,7 +285,7 @@
     <div class="mw9 center ph3 relative">
       <h4 class="headings blue">sponsorship</h4>
       <div class="tc">
-        <h2 class="f2 ttu green">they make this conference possible</h2>
+        <h2 class="f2 ttu green" data-i18n="sponsorSection.title">they make this conference possible</h2>
       </div>
       <div class="sponsors-logos pv6">
         <ul class="list flex-ns flex-column flex-row-ns items-center justify-center flex-wrap pv1 platino">
@@ -455,7 +457,7 @@
     <div class="mw9 center ph3 relative">
       <div class="flex flex-wrap justify-between-ns justify-center items-center tl-ns tc">
         <p class="blue f7">
-          <a href="conduct.html" class="link green hover-blue">code of conduct</a> |
+          <a data-i18n="menuSection.conduct" href="conduct.html" class="link green hover-blue">code of conduct</a> |
           <a href="https://twitter.com/nodeconfar" class="link green hover-blue" target="_black" rel="noopener">twitter</a> |
           <a href="https://www.facebook.com/nodeconfar/" class="link green hover-blue" target="_black" rel="noopener">facebook</a> |
           <a href="https://www.youtube.com/c/nodeconfargentina" class="link green hover-blue" target="_black" rel="noopener">youtube</a>

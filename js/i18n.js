@@ -1,5 +1,15 @@
 const translations = {
   en: {
+    menuSection: {
+      home: 'home',
+      about: 'about',
+      speakers: 'speakers',
+      schedule: 'schedule',
+      sponsors: 'sponsors',
+      conduct: 'code of conduct',
+      viewspeak: 'view all speakers',
+      viewschedule: 'view schedule',
+    },
     heroSection: {
       map: 'see map',
       date: 'OCTOBER 18th-20th, 2018',
@@ -60,8 +70,25 @@ const translations = {
         thanks: 'Thanks to all of you for supporting the conference',
       },
     },
+    formSection: {
+      title: 'stay',
+      subtitle: 'up to date',
+    },
+    sponsorSection: {
+      title: 'they make this conference possible',
+    },
   },
   es: {
+    menuSection: {
+      home: 'inicio',
+      about: 'acerca de',     
+      speakers: 'oradores',
+      schedule: 'cronograma',
+      sponsors: 'patrocinadores',
+      conduct: 'código de conducta',
+      viewspeak: 'ver a todos',
+      viewschedule: 'ver cronograma',
+    },
     heroSection: {
       map: 'ver mapa',
       date: 'OCTUBRE 18-20, 2018',
@@ -69,7 +96,7 @@ const translations = {
     aboutSection: {
       title: 'acerca de',
       description: {
-        firstPart: `Argentina se encuentra entre las primeras conferencias internacionales de Node.js que tienen lugar en territorio latinoamericano, y un esfuerzo comunitario sin ánimo de lucro para impulsar a Node.js en Argentina y Latinoamérica en su conjunto.`,
+        firstPart: `Argentina se encuentra entre las primeras conferencias internacionales de Node.js que tienen lugar en territorio latinoamericano, y un esfuerzo comunitario sin fines de lucro para impulsar a Node.js en Argentina y Latinoamérica en su conjunto.`,
         secondPart: `La conferencia de este año será un evento de tres días en el soleado Buenos Aires, Argentina, celebrado durante los días 18, 19 y 20 de octubre. Ambas jornadas llenas de acción estarán compuestas por oradores internacionalmente aclamados, regionales y locales.`,
         thirdPart: `Estamos esperando Noders, JavaScripters, front-enders y otros programadores de todo el mundo.`,
       },
@@ -82,29 +109,29 @@ const translations = {
           fullName: 'Suz Hinton',
           position: 'Cloud Developer Advocate en Microsoft',
           bio:
-            'Suz es una defensora de desarrolladores de nube en Microsoft. Suz se especializa en accesibilidad, hardware, JavaScript y computación en la nube. A ella le gusta soñar proyectos electrónicos divertidos en su tiempo libre.',
+            'Suz is a Cloud Developer Advocate at Microsoft. Suz specializes in accessibility, hardware, JavaScript, and cloud computing. She likes dreaming up fun electronic projects in her spare time.',
         },
         dan: {
           fullName: 'Dan Shaw',
-          position: 'Asesor Estratégico',
+          position: 'Strategic Advisor',
           bio: `
-            Dan Shaw, alias "dshaw", ha dedicado su carrera al crecimiento del Ecosistema Node.js. Jugó un papel decisivo en la formación de la Fundación Node.js, donde se desempeñó en la Junta como Director. Es conocido como "El Padrino de Node.js" por sus incansables esfuerzos para construir una comunidad y alinear las necesidades de los desarrolladores y líderes empresariales.
-            Es un orador principal y habla sobre liderazgo, Node.js, JavaScript y la transformación digital. Él es reconocible como la "Voz de Node.js" como host desde hace mucho tiempo del podcast NodeUp. Ha creado numerosos eventos como EnterpriseJS, NodeDay, SFNode, SFNodeBots y Nodebots Day para brindar oportunidades de compartir conocimiento y aprender.
-            Creó la primera empresa de consultoría dedicada a Node.js llamada The Node Firm y luego la primera entidad comercial en producir Node.js con NodeSource. Hoy en día, Dan Shaw trabaja en toda la industria brindando liderazgo como asesor estratégico para que las empresas que buscan aumentar su presencia y trabajar de manera efectiva con Node.js.
-          `,
+            Dan Shaw, aka “dshaw”, has dedicated his career to growing the Node.js Ecosystem. He was instrumental in the formation of the Node.js Foundation where he served on the Board as Director. He is known as "The Godfather of Node.js” for his tireless efforts to build community and align the needs of developers and business leaders.
+            He is a keynote speaker and speaks about Leadership, Node.js, JavaScript and Digital Transformation. He is recognizable as the “Voice of Node.js” as long-time host of the NodeUp podcast. He has created numerous events like EnterpriseJS, NodeDay, SFNode, SFNodeBots, and Nodebots Day to provide opportunities to share knowledge and learn.
+            He created the first consulting company dedicated to Node.js called The Node Firm and then the first commercial entity to productize Node.js with NodeSource. Today, Dan Shaw works across the industry providing leadership as a Strategic Advisor to companies looking grow their presence and work effectively with Node.js.
+            `,
         },
         franziska: {
           fullName: 'Franziska Hinkelman',
-          position: 'Ingeniera de software @ Google Cloud Platform',
+          position: 'Software engineer @ Google Cloud Platform',
           bio: `
-            Franziska es miembro del Comité Directivo Técnico de Node.js y un experto en el rendimiento de ES6. Ella tiene un Ph.D. en matemáticas y es ingeniero de software en Google en el equipo de Cloud Platform en Nueva York. Anteriormente, ella estaba en el equipo de Chrome V8. Cuando no está trabajando mucho para hacer que Node.js sea mejor en la plataforma de nube, probablemente esté montando caballos.
+            Franziska is a member of the Node.js Technical Steering Committee and an expert on ES6 performance. She has a Ph.D. in mathematics and is a software engineer at Google on the Cloud Platform team in New York. Previously, she was on the Chrome V8 team. When she's not working hard on making Node.js better on the Cloud Platform, she's probably out riding horses.
           `,
         },
         tara: {
           fullName: 'Tara Vancil',
-          position: 'Co-creadora of the Beaker Browser',
+          position: 'Co-creator of the Beaker Browser',
           bio: `
-            Tara es el cocreador del navegador Beaker, un navegador experimental para explorar y construir la Web peer-to-peer. Fue co-fundadora de Blue Link Labs, el equipo de entusiastas entre pares detrás del explorador Beaker y hashbase.io. Está dedicada a construir la Web del mañana como una Web para todos.
+            Tara is the co-creator of the Beaker Browser, an experimental browser for exploring and building the peer-to-peer Web. She co-founded Blue Link Labs, the team of peer-to-peer enthusiasts behind the Beaker Browser and hashbase.io. She's dedicated to building the Web of tomorrow as a Web for all.
           `,
         },
       },
@@ -114,13 +141,20 @@ const translations = {
       description: {
         firstPart: `¡queremos conocerte!`,
         secondPart: `Acceso total de dos días a Ciudad Cultural Konex el 19 y 20 de octubre.`,
-        thirdPart: `Este boleto también le dará: bolsa de regalos (incluyendo pegatinas de alta calidad y una camiseta de su tamaño), traducción en vivo (español -> inglés, inglés -> español), almuerzos del 19 y 20 de octubre, desayuno para el 19 de octubre, 3 coffee-breaks adicionales entre el 19 y 20 de octubre`,
+        thirdPart: `Esta entrada también le dará: bolsa de regalos (incluyendo stickers de alta calidad y una camiseta de su tamaño), traducción en vivo (español -> inglés, inglés -> español), almuerzos del 19 y 20 de octubre, desayuno para el 19 de octubre, 3 coffee-breaks adicionales entre el 19 y 20 de octubre`,
       },
       tickets: {
         early: 'anticipadas',
-        soldOut: '¡Los boletos están agotados!',
+        soldOut: '¡Las entradas están agotadas!',
         thanks: 'Gracias a todos por apoyar la conferencia',
       },
+    },
+    formSection: {
+      title: 'mantenete',
+      subtitle: 'informado',
+    },
+    sponsorSection: {
+      title: 'hacen esta conferencia posible',
     },
   },
 }
