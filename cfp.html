@@ -74,42 +74,46 @@
     <div class="hero">
         <header class="header" role="banner">
             <div class="mw9 center ph3">
-                <div id="desktop-nav" class="dn-ms">
-                    <div class="flex justify-between items-center pv3">
-                        <div>
-                            <p class="ma0">
-                                <a href="mailto:hello@nodeconf.com.ar" class="f6 white hover-blue link">hello@nodeconf.com.ar</a>
-                            </p>
-                            <p class="ma0">
-                                <a href="https://www.twitter.com/nodeconfar" target="_blank" rel="noopener" class="f6 white hover-blue link">@nodeconfar</a>
-                            </p>
-                        </div>
-                        <nav id="top-menu">
-                            <a class="white hover-blue link f6 ph2" href="/">home</a>
-                            <a class="white hover-blue link f6 ph2" href="/#about">about</a>
-                            <a class="white hover-blue link f6 ph2" href="speakers.html">speakers</a>
-                            <a class="white hover-blue link f6 ph2" href="schedule.html">schedule</a>
-                            <a class="white hover-blue link f6 ph2" href="/#sponsors">sponsors</a>
-                        </nav>
-                    </div>
+              <div id="desktop-nav" class="dn-ms">
+                <div class="flex justify-between items-center pv3">
+                  <div>
+                    <p class="ma0">
+                      <a href="mailto:hello@nodeconf.com.ar" class="f6 white hover-blue link">hello@nodeconf.com.ar</a>
+                    </p>
+                    <p class="ma0">
+                      <a href="https://www.twitter.com/nodeconfar" target="_blank" rel="noopener" class="f6 white hover-blue link">@nodeconfar</a>
+                    </p>
+                  </div>
+                  <nav id="top-menu">
+                    <a data-i18n="menuSection.home" class="white hover-blue link f6 ph2" href="/">home</a>
+                    <a data-i18n="menuSection.about" class="white hover-blue link f6 ph2" href="/#about">about</a>
+                    <a data-i18n="menuSection.speakers" class="white hover-blue link f6 ph2" href="speakers.html">speakers</a>
+                    <a data-i18n="menuSection.schedule" class="white hover-blue link f6 ph2" href="schedule.html">schedule</a>
+                    <a data-i18n="menuSection.sponsors" class="white hover-blue link f6 ph2" href="/#sponsors">sponsors</a>
+                    <a class="white hover-blue link f6 pl4 ttu" data-lang="en">en</a>
+                    <a class="white hover-blue link f6 ph2 ttu" data-lang="es">es</a>
+                  </nav>
                 </div>
-                <div id="mobile-nav" class="dn-l">
-                    <div class="flex items-center justify-between mw8 center">
-                        <a href="/" class="mw3 pv2">
-                            <img src="assets/images/logom-header-nodeconf.png" alt="iso-nodeconf">
-                        </a>
-                        <button id="toggle-menu" type="button" class="bg-transparent bn f4 outline-0 pa3"></button>
-                    </div>
-                    <nav id="menu" class="dn z-0">
-                        <a class="white link f6 pa2 db tr" href="/">home</a>
-                        <a class="white link f6 pa2 db tr" href="/#about">about</a>
-                        <a class="white link f6 pa2 db tr" href="speakers.html">speakers</a>
-                        <a class="white link f6 pa2 db tr" href="schedule.html">schedule</a>
-                        <a class="white link f6 pa2 db tr" href="/#sponsors">sponsors</a>
-                    </nav>
+              </div>
+              <div id="mobile-nav" class="dn-l">
+                <div class="flex items-center justify-between mw8 center">
+                  <a href="/" class="mw3 pv2">
+                    <img data-aload="assets/images/logom-header-nodeconf.png" alt="iso-nodeconf">
+                  </a>
+                  <button id="toggle-menu" type="button" class="bg-transparent bn f4 outline-0 pa3" aria-label="Toggle Menu" aria-pressed="false"></button>
                 </div>
+                <nav id="menu" class="dn z-0">
+                  <a data-i18n="menuSection.home" class="white link f6 pa2 db tr" href="/">home</a>
+                  <a data-i18n="menuSection.about" class="white link f6 pa2 db tr" href="/#about">about</a>
+                  <a data-i18n="menuSection.speakers" class="white link f6 pa2 db tr" href="speakers.html">speakers</a>
+                  <a data-i18n="menuSection.schedule" class="white link f6 pa2 db tr" href="schedule.html">schedule</a>
+                  <a data-i18n="menuSection.sponsors" class="white link f6 pa2 db tr" href="/#sponsors">sponsors</a>
+                  <a class="white link f6 pa2 db tr ttu" data-lang="en">en</a>
+                  <a class="white link f6 pa2 db tr ttu" data-lang="es">es</a>
+                </nav>
+              </div>
             </div>
-        </header>
+          </header>
     </div>
     <div class="pv6">
         <div class="pv5-ns pv4 mw8 center">
@@ -119,31 +123,31 @@
         <div class="mw8 center">
             <div class="bg-white">
                 <div class="pa4-ns pa3 cf">
-                    <h4 class="f4 pa2 bb b--near-black mb3 db ttu cb">topics</h4>
+                    <h4 class="f4 pa2 bb b--navy mb3 db ttu cb">topics</h4>
                     <div class="fl w-100 w-50-ns pv1 ph2">
                         <p class="pb1">To get a feel for what we are interested in hearing about, you might want to look at other NodeConf
                             chapters around the world (
-                            <a href="http://london.nodeconf.com/#speakers" target="_blank" rel="noopener" class="link dim light-green">London</a>,
-                            <a href="http://oslo.nodeconf.com/#speakers" target="_blank" rel="noopener" class="link dim light-green">Oslo</a>,
-                            <a href="http://barcelona.nodeconf.com/#speakers" target="_blank" rel="noopener" class="link dim light-green">Barcelona</a>).</p>
+                            <a href="http://london.nodeconf.com/#speakers" target="_blank" rel="noopener" class="link dim green">London</a>,
+                            <a href="http://oslo.nodeconf.com/#speakers" target="_blank" rel="noopener" class="link dim green">Oslo</a>,
+                            <a href="http://barcelona.nodeconf.com/#speakers" target="_blank" rel="noopener" class="link dim green">Barcelona</a>).</p>
                         <p class="pb1">We like to see anything that squarely fits into the spectrum of:</p>
                         <p class="pb1">
-                            <span class="light-green ph1">•</span>Cutting-edge technological advances in the world of JavaScript or computer science in
+                            <span class="green ph1">•</span>Cutting-edge technological advances in the world of JavaScript or computer science in
                             general, if somehow applicable to Node.js.</p>
                         <p class="pb1">
-                            <span class="light-green ph1">•</span>We love hearing about the ingenious ideas &amp; cool hacks you’re working on.</p>
+                            <span class="green ph1">•</span>We love hearing about the ingenious ideas &amp; cool hacks you’re working on.</p>
                     </div>
                     <div class="fl w-100 w-50-ns pv1 ph2">
                         <p class="pb1">
-                            <span class="light-green ph1">•</span>JavaScript-related art installations or hacks.</p>
+                            <span class="green ph1">•</span>JavaScript-related art installations or hacks.</p>
                         <p class="pb1">
-                            <span class="light-green ph1">•</span>Hardware-related applications of JavaScript.</p>
+                            <span class="green ph1">•</span>Hardware-related applications of JavaScript.</p>
                         <p class="pb1">
-                            <span class="light-green ph1">•</span>Node.js community, history, past, present &amp; future.</p>
+                            <span class="green ph1">•</span>Node.js community, history, past, present &amp; future.</p>
                         <p class="pb1">
-                            <span class="light-green ph1">•</span>And finally: Whatever the hell you want; this is your conference.</p>
+                            <span class="green ph1">•</span>And finally: Whatever the hell you want; this is your conference.</p>
                     </div>
-                    <h4 class="f4 ph2 pb2 pt4 bb b--near-black mb3 db ttu cb">We Can Help</h4>
+                    <h4 class="f4 ph2 pb2 pt4 bb b--navy mb3 db ttu cb">We Can Help</h4>
                     <div class="fl w-100 w-50-ns pv1 ph2">
                         <p class="pb1">Not everybody is a natural talent on stage. Not everybody can produce kick-ass slide-decks. Not everybody
                             is a live-demo-god. Not everybody knows they have something great to talk about.</p>
@@ -153,42 +157,42 @@
                             on stage, we are here to reach out and help you to develop or hone the skills you think you lack
                             to deliver a great presentation.</p>
                         <p class="pb1">
-                            <span class="light-green ph1">•</span>We are happy to brainstorm your interests to see if a great topic is hiding.</p>
+                            <span class="green ph1">•</span>We are happy to brainstorm your interests to see if a great topic is hiding.</p>
                         <p class="pb1">
-                            <span class="light-green ph1">•</span>We are happy to connect you with experienced speakers to help prepare your submission,
+                            <span class="green ph1">•</span>We are happy to connect you with experienced speakers to help prepare your submission,
                             or you can refer to the “Example Submission” section below for tips.</p>
                     </div>
                     <div class="fl w-100 w-50-ns pv1 ph2">
                         <p class="pb1">
-                            <span class="light-green ph1">•</span>We are happy to review and advise on how to produce a slide deck. If you don’t feel creative,
+                            <span class="green ph1">•</span>We are happy to review and advise on how to produce a slide deck. If you don’t feel creative,
                             just use these JSConf
-                            <a href="https://github.com/jsconf/presentation-templates/downloads" target="_blank" rel="noopener" class="link dim light-green">Keynote and PowerPoint templates.</a>
+                            <a href="https://github.com/jsconf/presentation-templates/downloads" target="_blank" rel="noopener" class="link dim green">Keynote and PowerPoint templates.</a>
                         </p>
                         <p class="pb1">
-                            <span class="light-green ph1">•</span>If you need practice giving talks, get in touch, we can hook you up with local meetup
+                            <span class="green ph1">•</span>If you need practice giving talks, get in touch, we can hook you up with local meetup
                             groups or set up a stage for you and a bunch of friends in advance, so you can practice in front
                             of a friendly crowd.</p>
                         <p class="pb1">
-                            <span class="light-green ph1">•</span>Again, whatever else you might need, we’re here to help.</p>
+                            <span class="green ph1">•</span>Again, whatever else you might need, we’re here to help.</p>
                         <p>Get in touch:
-                            <a href="mailto:cfp@nodeconf.com.ar" class="link dim light-green">cfp@nodeconf.com.ar </a>(just don’t use this to submit a proposal).</p>
+                            <a href="mailto:cfp@nodeconf.com.ar" class="link dim green">cfp@nodeconf.com.ar </a>(just don’t use this to submit a proposal).</p>
                         <p>If you need more encouragement, check out the
-                            <a href="http://weareallaweso.me/" class="link dim light-green" target="_blank" rel="noopener">We Are All Awesome</a> site that tries to convince you to speak!</p>
+                            <a href="http://weareallaweso.me/" class="link dim green" target="_blank" rel="noopener">We Are All Awesome</a> site that tries to convince you to speak!</p>
                     </div>
-                    <h4 class="f4 ph2 pb2 pt4 bb b--near-black mb3 db ttu cb">The Perks</h4>
+                    <h4 class="f4 ph2 pb2 pt4 bb b--navy mb3 db ttu cb">The Perks</h4>
                     <div class="fl w-100 w-50-ns pv1 ph2">
                         <p class="pb1">If you get selected as a speaker at NodeConf Argentina, here’s what you get:</p>
                         <p class="pb1">
-                            <span class="light-green ph1">•</span>
+                            <span class="green ph1">•</span>
                             <strong>Travel to Buenos Aires covered.</strong> This usually means we pay for your plane ticket, boat,
                             raft, hyperloop pod, or space pod. We are happy to assist with booking your itinerary.</p>
                         <p class="pb1">
-                            <span class="light-green ph1">•</span>
+                            <span class="green ph1">•</span>
                             <strong>Entrance to the conference.</strong> We won’t be done with the speaker selections by the end
                             of the ticket sales, so if you want to make sure you can attend, you may want to purchase a ticket
                             regardless. If you get selected to speak and you bought a ticket we will send you a refund.</p>
                         <p class="pb1">
-                            <span class="light-green ph1">•</span>
+                            <span class="green ph1">•</span>
                             <strong>We cover your stay in Buenos Aires</strong> in a fancy hotel near the venue (including free Wifi)
                             for the days of the conference and a day before and after (e.g. October 18th-20th). If you want
                             to stay longer, we can arrange things, just let us know. You will have to cover extra nights,
@@ -202,24 +206,24 @@
                         <p class="pb1">If you want to bring a significant other, or bring your kid(s) and need child-care to be sorted out
                             for the time of the conference, please also get in touch. We are here to make this easy for you!</p>
                     </div>
-                    <h4 class="f4 ph2 pb2 pt4 bb b--near-black mb3 db ttu cb">The Selection Process</h4>
+                    <h4 class="f4 ph2 pb2 pt4 bb b--navy mb3 db ttu cb">The Selection Process</h4>
                     <div class="fl w-100 w-50-ns pv1 ph2">
                         <p class="pb1">Here’s roughly how we pick our talks:</p>
                         <p class="pb1">Anonymize submissions, so we don’t bias against anything related to the submitter.</p>
                         <p class="pb1">
-                            <span class="light-green ph1">•</span>Two rounds of voting:<br>
+                            <span class="green ph1">•</span>Two rounds of voting:<br>
                             - The first round rates each talk on a scale from 1 to 10.<br>
                             - The top-N (~50) submissions are rated again on a 3-point scale (“meh”, “yay”, “MUST HAVE”).<br>
                     </p></div>
                     <div class="fl w-100 w-50-ns pv1 ph2">
                         <p class="pb1">
-                            <span class="light-green ph1">•</span>De-anonymize so we can (finally) bias against speaker details (based on our budget, we
+                            <span class="green ph1">•</span>De-anonymize so we can (finally) bias against speaker details (based on our budget, we
                             might opt for a local or at least closer-by [read: cheaper to transport] speaker). (and a number
                             of details that we make up as we go along)</p>
                         <p class="pb1"> We expect 100-200 excellent submissions for 20-30 speaking slots. The process helps us select the
                             right ones.</p>
                     </div>
-                    <h4 class="f4 ph2 pb2 pt4 bb b--near-black mb3 db ttu cb">Example Submission</h4>
+                    <h4 class="f4 ph2 pb2 pt4 bb b--navy mb3 db ttu cb">Example Submission</h4>
                     <div class="fl w-100 w-50-ns pv1 ph2">
                         <p class="pb1">Here’s an example conference talk proposal from JSConf EU 2011:</p>
                         <p class="pb1">
@@ -237,7 +241,7 @@
                             use JSLint - except when it’s a really good idea) - to the bizarre (take up needlework), come
                             and be guided toward the bright shiny light where the gods live.</p>
                     </div>
-                    <h4 class="f4 ph2 pb2 pt4 bb b--near-black mb3 db ttu cb">Guidelines</h4>
+                    <h4 class="f4 ph2 pb2 pt4 bb b--navy mb3 db ttu cb">Guidelines</h4>
                     <div class="fl w-100 w-50-ns pv1 ph2">
                         <p class="pb1">Submit your proposal by
                             <strong>June 24th, 23:59:59 ART (GMT -3).</strong> No excuses.</p>
@@ -267,7 +271,7 @@
                             talked about elsewhere, try to add a twist, or new research, or development, something unique.
                             Of course, if your talk is plain awesome as-is, go for that :)</p>
                     </div>
-                    <h4 class="f4 ph2 pb2 pt4 bb b--near-black mb3 db ttu cb">Misc</h4>
+                    <h4 class="f4 ph2 pb2 pt4 bb b--navy mb3 db ttu cb">Misc</h4>
                     <div class="fl w-100 w-50-ns pv1 ph2">
                         <p class="pb1">All talks will be recorded and published on the internet for free, along with a recording of the
                             slide deck, live-demo or other on-presenter-screen activity.</p>
