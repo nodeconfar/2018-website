@@ -1402,7 +1402,6 @@ h5 {
     position: relative;
     padding: 0;
     text-align: left;
-    cursor: pointer;
     background-color: #fff;
     transition: all .15s ease
 }
