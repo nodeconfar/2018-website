@@ -23,6 +23,22 @@ const translations = {
       },
       previous: 'previous editions',
     },
+    conductSection: {
+      title: 'Code of conduct',
+      description: {
+      onePart: 'Harassment includes, but is not limited to, offensive verbal comments related to gender, age, sexual orientation, disability, physical appearance, body size, race, religion, sexual images in public spaces, deliberate intimidation, stalking, following, harassing photography or recording, sustained disruption of talks or other events, inappropriate physical contact, and unwelcome sexual attention.',
+      twoPart: 'Participants asked to stop any harassing behavior are expected to comply immediately.',
+      threePart: 'Sponsors are also subject to the anti-harassment policy. In particular, sponsors should not use sexualised images, activities, or other material. Booth staff (including volunteers) should not use sexualised clothing/uniforms/costumes, or otherwise create a sexualised environment.',
+      fourPart: 'If a participant engages in harassing behavior, the conference organisers may take any action they deem appropriate, including warning the offender or expulsion from the conference with no refund.',
+      fivePart: 'All attendees, speakers, sponsors and volunteers are required to agree with the following code of conduct.',
+      sixPart: 'We expect participants to follow these rules at conference, workshop venues and conference-related social events.',
+      sevenPart: 'Conference staff will offer help to participants to contact hotel/venue security or local law enforcement, provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the conference. Conference staff can be identified as they’ll be wearing branded t-shirts.',
+      eightPart: 'If you are being target of harassment or discrimination —or you witness these behaviors— please contact us at',
+      ninePart: 'by phone at +5491167990445 (Alejandro Oviedo) or send an anonymous report',
+      tenPart: 'here',
+      elevenPart: 'All concerns shared with the organizers will be kept confidential.',
+    }, 
+    },
     speakersSection: {
       title: 'speakers',
       speakers: {
@@ -101,6 +117,22 @@ const translations = {
         thirdPart: `Estamos esperando Noders, JavaScripters, front-enders y otros programadores de todo el mundo.`,
       },
       previous: 'ediciones previas',
+    },
+    conductSection: {
+      title: 'Código de conducta',
+      description: {
+      onePart: 'Acoso incluye, pero no está limitado solo a esto, comentarios verbales ofensivos sobre género, edad, orientación sexual, disabilidad, apariencia física, tamaño físico, raza, religión, imágenes sexuales en espacio públicos, intimidación deliberada, stalking, perseguimiento, acoso fotográfico o grabado, interrupción sostenida de presentaciones u otros eventos, contacto físico inapropiado o atención sexual no deseada.',
+      twoPart: 'A los participantes que se les pida detener cualquier comportamiento acosador deberán cumplir inmediatamente con la solicitud',
+      threePart: 'Los sponsors también están sujetos a la política de anti-acoso. En particular, los sponsors no deberán usar imágenes sexualizadas, actividades u otros materiales. Los miembros del staff de los stands (incluyendo voluntarios) no deben usar uniformes/disfraces/ropa sexualizada o crear un entorno sexualizado.',
+      fourPart: 'Si un participante experimenta un comportamiento acosador, los organizadores de la conferencia podrán tomar cualquier acción que les parezca apropiada, incluyendo una advertencia al transgresor o expulsión de la conferencia sin reembolso.',
+      fivePart: 'Todos los asistentes, oradores/oradoras, sponsors y voluntarios/voluntarias deberán guiarse por medio de este código de conducta.',
+      sixPart: 'Se espera que los participantes cumplan con estas reglas en la conferencia, en los talleres y en los eventos sociales relacionados al evento.',
+      sevenPart: 'Los miembros del staff ofrecerán ayuda a los participantes para contactar a la seguridad del hotel o la policía local, se proveerá seguridad privada o se asistirá a aquellas personas que experimenten acoso a sentirse seguras en el tiempo que durela conferencia. Los miembros del staff pueden ser identificados por las remeras de la conferencia “Staff”.',
+      eightPart: 'Si estás siendo sujeto de acoso o discriminación -o sos testigo de estos comportamientos- por favor contactanos a',
+      ninePart: 'por teléfono a +5491167990445 (Alejandro Oviedo) o completá un reporte anónimo',
+      tenPart: 'acá',
+      elevenPart: ' Todos los reportes y su contenido serán confidenciales.',
+    },
     },
     speakersSection: {
       title: 'oradores',
